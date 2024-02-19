@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* base */
+::selection {
+    background-color: #56e1d757;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: #22292E;
+    color: white;
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* layout */
+section{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.information, .portrait{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* fonts */
+.f600 {
+    font-weight: 600;
+}
+
+
+/* modules */
+#home {
+
+    margin: 200px auto;
+    position: relative;
+}
+
+.information {
+    width: 40%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.portrait {
+    margin-bottom: 40px;
+}
+
+
+.rectangle {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 40px;
+    border: 0px solid #00FFF0;
+}
+
+
+.subtitles {
+    line-height: 150%;
+    opacity: 0.5;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    text-align: justify;
+}
+
+
+
+section h2 {
+    font-size: medium;
+    margin-top: 30px;
+}
+
+#name {
+    font-size: 60px;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+#letstalk {
+    margin-left: 10%;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #00FFF0, #23908A);
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+.information a {
+    margin-top: 15px;
+}
+
+#letstalk:active {
+    background: linear-gradient(to top, #00FFF0, #23908A);
+}
+
+
+
+
+#title {
+    color: #00FFF0;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 25px;
+}
+
+.links img {
+    width: 16px;
+    transform: translate(5px, 5px);
+    transition: 0.2s;
+}
+
+.links:hover img {
+    transform: translate(5px, 5px) scale(1.1);
+}
+
+.links img:hover {
+    transform: translate(5px, 10px) scale(1.1);
+}
+
+#about .subtitles {
+    margin: auto;
+    width: 80%;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 50px;
+
+
+}
+
+.image-holder {
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 0 20px;
+    vertical-align: top;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+
+.image-holder:first-child {
+    background: url('images/SRV.jpeg');
+    background-size: cover;
+}
+
+.image-holder:nth-child(2) {
+    background: url('images/Thiagarajar-College-of-Engineering-TCE-Madurai-Campus-View-1.jpeg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.image-holder:nth-child(3) {
+    background: url('images/Zoho-interior.jpeg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.image-holder:hover {
+    filter: saturate(0);
+}
+
+.image-holder div {
+    background-color: rgba(0, 0, 0, 0.524);
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+
+.img-text {
+    filter: blur(0);
+    line-height: 200px;
+    font-weight: 600;
+    text-shadow: 1px 1px 10px black;
+    font-size: larger;
+    display: none;
+
+}
+
+.skillcontainer {
+    margin: auto;
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.progress-wrap {
+    height: 50px;
+    width: 80%;
+    background-color: #D9D9D9;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.progress {
+    height: 100%;
+    background-color: #55A29E;
+    line-height: 50px;
+
+
+}
+
+#Hobbies {
+    margin-top: 50px;
+    width: 90%;
+}
+
+#Hobbies h2 {
+    margin-bottom: -10px;
+}
+
+footer svg {
+    fill: white;
+    height: 1.2em;
+    vertical-align: bottom;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer a {
+    margin: 0 2%;
+}
+
+
+@media screen and (min-width: 760px) {
+
+    .rectangle,
+    .rectangle img {
+        transition: all 0.3s;
+    }
+
+    /* states */
+    .rectangle:hover {
+        transform: rotate(10deg);
+        border: 3px solid white;
+    }
+
+
+    .rectangle:hover img {
+        transform: rotate(-10deg) scale(1.2);
+    }
+
+    footer a[href]:hover {
+        color: #00FFF0;
+
+    }
+
+    footer a[href]:hover svg {
+        fill: #00FFF0;
+    }
+
+
+    #navBar li {
+        float: left;
+        list-style: none;
+        margin-right: 40px;
+        font-weight: 400;
+    }
+
+    .portrait {
+        margin-left: 10%;
+    }
+
+    #navBar li a:hover {
+        color: #00FFF0;
+    }
+
+    #navBar {
+        float: right;
+        margin: 0;
+        margin-right: 60px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+
+    }
+
+    #logo {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+
+    .progress {
+        transition: all 0.5s;
+        color: transparent;
+    }
+
+    .progress-wrap:hover .progress {
+        background-color: #284745;
+        color: white;
+    }
+
+    .photographs {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .photos {
+        width: 270px;
+        height: 480px;
+        border-radius: 25px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 10px 20px;
+
+    }
+
+    .photos img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+
+    .photos:hover img {
+        transform: scale(1.1);
+    }
+
+    #clickhere {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 759px) {
+    #hamburger {
+        position: absolute;
+        margin: 0;
+        color: white;
+        font-size: 70px;
+        vertical-align: text-top;
+        top: -15px;
+        cursor: pointer;
+        left: 20px;
+    }
+
+    #navBar {
+        float: left;
+        list-style: none;
+        margin-right: 10px;
+        position: absolute;
+        margin: 0;
+        top: 70px;
+        left: 0px;
+        padding: 0;
+        display: none;
+
+    }
+
+    #logo {
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #navBar li {
+        font-size: 20px;
+        padding: 10px 30px;
+        margin-left: 15px;
+        margin-top: 5px;
+        border: 1px solid #ffffff;
+        background-color: #22292E;
+
+
+    }
+
+    .rectangle {
+        margin: auto;
+    }
+
+    #navBar li:active {
+
+        background-color:white;
+        color: #22292E;
+    }
+
+    .information {
+        width: 100%;
+        display: block;
+    }
+
+    .portrait {
+        width: 100%;
+        display: block;
+    }
+
+    #name {
+        font-size: 40px;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    .subtitles {
+        font-size: 20px;
+    }
+
+    #about {
+        margin-top: 200px;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .skillcontainer {
+        width: 80%;
+    }
+
+    .photographs {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .photos {
+        width: 270px;
+        height: 480px;
+        border-radius: 25px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 10px 20px;
+
+    }
+
+    .photos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #home {
+        margin-top: 50px;
+    }
+
+    .photos:not(.photos:nth-child(1)) {
+        display: none;
+    }
+
+    #clickhere {
+        display: block;
+    }
+}
+/* 
+#skills .skillcontainer:nth-of-type(2n +1 ) .progress {
+    background-color: saddlebrown;
+} */
