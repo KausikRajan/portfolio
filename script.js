@@ -21,8 +21,8 @@ $(window).resize(function (event) {
         $('.photos').css('display','inline-block');
     }
     if ($(window).outerWidth() < 760) {
-        $('.photos:not(.photos:nth-child('+count+'))').css('display','none');
-        $('.photos:nth-child('+count+')').css('display','inline-block');
+        // $('.photos:not(.photos:nth-child('+count+'))').css('display','none');
+        // $('.photos:nth-child('+count+')').css('display','inline-block');
         $('#navBar').css('display', 'none');
         $('.information').before($('.portrait'));
 
